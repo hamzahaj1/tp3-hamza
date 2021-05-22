@@ -1,0 +1,59 @@
+{
+    "jsonSchemaCommande" :{
+        "type": "object",
+        "properties": {
+          "plats": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string"
+                  },
+                  "nom": {
+                    "type": "string"
+                  },
+                  "nbrPortions": {
+                    "type": "integer"
+                  },
+                  "__v": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "_id",
+                  "nom",
+                  "nbrPortions",
+                  "__v"
+                ]
+              }
+            ]
+          },
+          "_id": {
+            "type": "string"
+          },
+          "dateArrivee": {
+            "type": "string"
+          },
+          "usager": {
+            "type": "string"
+          },
+          "__v": {
+            "type": "integer"
+          },
+          "livreur": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "plats",
+          "_id",
+          "dateArrivee",
+          "usager",
+          "__v",
+          "livreur"
+        ]
+      },
+      "jsonSchemaCommandeMin": {"type":"object","properties":{"plats":{"type":"array","items":[{"type":"object","properties":{"_id":{"type":"string"},"nom":{"type":"string"},"nbrPortions":{"type":"integer"},"__v":{"type":"integer"}},"required":["_id","nom","nbrPortions","__v"]}]},"_id":{"type":"string"},"dateArrivee":{"type":"string"},"usager":{"type":"string"},"__v":{"type":"integer"},"livreur":{"type":"string"}},"required":["plats","_id","dateArrivee","usager","__v","livreur"]}
+}

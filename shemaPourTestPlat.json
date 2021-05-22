@@ -1,0 +1,71 @@
+{
+    
+    "jsonSchemaPlat": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "nom": {
+            "type": "string"
+          },
+          "nbrPortions": {
+            "type": "integer"
+          },
+          "__v": {
+            "type": "integer"
+          },
+          "links": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "rel": {
+                    "type": "string"
+                  },
+                  "method": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "rel",
+                  "method",
+                  "href"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "rel": {
+                    "type": "string"
+                  },
+                  "method": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "rel",
+                  "method",
+                  "href"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "_id",
+          "nom",
+          "nbrPortions",
+          "__v",
+          "links"
+        ]
+      },
+      "jsonSchemaPlatMin":{"type":"object","properties":{"_id":{"type":"string"},"nom":{"type":"string"},"nbrPortions":{"type":"integer"},"__v":{"type":"integer"},"links":{"type":"array","items":[{"type":"object","properties":{"rel":{"type":"string"},"method":{"type":"string"},"href":{"type":"string"}},"required":["rel","method","href"]},{"type":"object","properties":{"rel":{"type":"string"},"method":{"type":"string"},"href":{"type":"string"}},"required":["rel","method","href"]}]}},"required":["_id","nom","nbrPortions","__v","links"]}
+}

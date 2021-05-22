@@ -1,0 +1,38 @@
+    {
+        "jsonSchemaUsager": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "_id",
+                "nom",
+                "prenom",
+                "adresse",
+                "pseudo",
+                "motDePasse",
+                "__v"
+            ]
+        },
+    "jsonSchemaMinUsager":{"type":"object","properties":{"_id":{"type":"string"},"nom":{"type":"string"},"prenom":{"type":"string"},"adresse":{"type":"string"},"pseudo":{"type":"string"},"motDePasse":{"type":"string"},"__v":{"type":"integer"}},"required":["_id","nom","prenom","adresse","pseudo","motDePasse","__v"]}
+}

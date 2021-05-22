@@ -1,0 +1,34 @@
+{
+    "jsonSchemaPlat" : {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "nom": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "voiture": {
+            "type": "string"
+          },
+          "quartier": {
+            "type": "string"
+          },
+          "__v": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "_id",
+          "nom",
+          "prenom",
+          "voiture",
+          "quartier",
+          "__v"
+        ]
+      },
+      "jsonSchemaPlatMin" : {"type":"object","properties":{"_id":{"type":"string"},"nom":{"type":"string"},"prenom":{"type":"string"},"voiture":{"type":"string"},"quartier":{"type":"string"},"__v":{"type":"integer"}},"required":["_id","nom","prenom","voiture","quartier","__v"]}
+}
