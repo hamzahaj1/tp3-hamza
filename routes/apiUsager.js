@@ -14,7 +14,7 @@ var CommandeModel = require('../models/commandeModel').CommandeModel;
 var PlatModel = require('../models/platModel').PlatModel;
 //ORM Mongoose
 var mongoose = require('mongoose');
-// Connexion à MongoDB avec Mongoose
+//s Connexion à MongoDB avec Mongoose
 
 mongoose.connect('mongodb+srv://hamzahaj:rimouham2001@cluster0.kao7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/tp3', {
     useNewUrlParser: true,
@@ -322,14 +322,14 @@ routerApiUsager.route('/:usager_id/commandes/:commande_id/plats').get(function (
                 CommandeModel.findById(req.params.commande_id, function (err, commande) {
                     if (err) throw err;
 
-                    var arrayPlats = [];
+                    var arrayPlat = [];
 
                     for (var i = 0; i < commande.plats.length; i++) {
-                        arrayPlats.push(commande.plats[i]);
+                        arrayPlat.push(commande.plats[i]);
                     }
 
                     res.header('Content-Type', 'application/json');
-                    res.status(200).json(arrayPlats);
+                    res.status(200).json(arrayPlat);
                 });
 
             } else {
