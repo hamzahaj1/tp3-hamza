@@ -84,9 +84,7 @@ const corsSites = {
 
 const options = {
     origin: true,
-    methods: ["GET"],
-    preflightContinue: false,
-    optionsSuccessStatus: 200
+    methods: ["GET"]
 };
 //cors(corsOptions) ,
 routerApiPlat.route('')
