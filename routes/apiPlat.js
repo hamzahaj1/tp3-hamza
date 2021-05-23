@@ -6,7 +6,7 @@ var routerApiPlat = express.Router();
 var jwt = require('jsonwebtoken');
 var cors = require('cors');
 
-var url_base = "https://tp3-hamza.herokuapp.com/";
+var url_base = "https://tp3-hamza.herokuapp.com";
 
 //importation de modèle Livreur
 var PlatModel = require('../models/platModel').PlatModel;

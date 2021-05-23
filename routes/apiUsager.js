@@ -5,7 +5,7 @@ var express = require('express');
 var routerApiUsager = express.Router();
 var jwt = require('jsonwebtoken');
 
-var url_base = "https://tp3-hamza.herokuapp.com/";
+var url_base = "https://tp3-hamza.herokuapp.com";
 
 //importation des modèles 
 var UsagerModel = require('../models/usagerModel').UsagerModel;
