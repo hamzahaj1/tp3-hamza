@@ -4,7 +4,7 @@ var express = require('express');
 var routerApiLivreur = express.Router();
 var jwt = require('jsonwebtoken');
 
-var url_base = "https://tp3-hamza.herokuapp.com";
+var url_base = "https://tp3-hamza.herokuapp.com/";
 
 //importation de modèle Livreur
 var LivreurModel = require('../models/livreurModel').LivreurModel;
