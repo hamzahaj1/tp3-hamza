@@ -4,7 +4,7 @@ var express = require('express');
 var routerApiLivreur = express.Router();
 var jwt = require('jsonwebtoken');
 
-var url_base = "http://localhost:8090";
+var url_base = "https://tp3-hamza.herokuapp.com";
 
 //importation de modèle Livreur
 var LivreurModel = require('../models/livreurModel').LivreurModel;
@@ -13,7 +13,7 @@ var LivreurModel = require('../models/livreurModel').LivreurModel;
 var mongoose = require('mongoose');
 // Connexion à MongoDB avec Mongoose
 
-mongoose.connect('mongodb://localhost:27017/tp3', {
+mongoose.connect('mongodb+srv://hamzahaj:rimouham2001@cluster0.kao7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/tp3', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10

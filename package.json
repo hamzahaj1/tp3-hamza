@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "tp3 api",
   "main": "app.js",
+  "engines": {
+    "node": "v15.10.0"
+  },
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "bunyan": "^1.8.15",
+    "body-parser":"^1.17.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-hateoas-links": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.8",
     "nodemon": "^2.0.7",
-    "swagger-ui-express": "^4.1.6"
+    "swagger-ui-express": "^4.1.6",
+    "mongodb":"^3.6.5"
   }
 }

@@ -69,7 +69,9 @@ app.all('*', function (req, res) {
     res.status(404).send('Erreur 404 : Ressource inexistante !');
 });
 
+var PORT = process.env.PORT || 8090;
+
 // Démarrage du serveur.
-app.listen(8090, function () {
-    console.log('Serveur sur port ' + this.address().port);
+app.listen(PORT, function () {
+    console.log('Serveur sur port ' + PORT);
 });
