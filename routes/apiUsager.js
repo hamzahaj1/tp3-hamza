@@ -16,7 +16,7 @@ var PlatModel = require('../models/platModel').PlatModel;
 var mongoose = require('mongoose');
 //s Connexion à MongoDB avec Mongoose
 
-mongoose.connect('mongodb+srv://hamzahaj:rimouham2001@cluster0.kao7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/tp3', {
+mongoose.connect('mongodb+srv://hamzahaj:rimouham2001@cluster0.kao7g.mongodb.net/tp3', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10
